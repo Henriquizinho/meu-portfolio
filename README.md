@@ -1,98 +1,66 @@
-# Welcome to React Router!
+# Meu Portfólio Pessoal
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Descrição
+Este é meu portfólio pessoal desenvolvido utilizando React e Vite. Ele inclui uma página inicial, um portfólio de projetos, uma página de contato e uma página de erro 404 personalizada.
 
-## Features
+## Tecnologias Utilizadas
+- React
+- Vite
+- React Router Dom
+- CSS/TailwindCSS
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Estrutura do Projeto
 
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
+├── .react-router
+├── app
+│   ├── routes
+│   │   ├── home.tsx
+│   ├── welcome
+│   │   ├── app.css
+│   │   ├── root.tsx
+│   │   ├── routes.ts
+├── node_modules
+├── public
+│   ├── favicon.ico
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── ProjectCard.jsx
+│   ├── pages
+│   │   ├── NewContact.jsx
+│   │   ├── NewHome.jsx
+│   │   ├── NewNotFound.jsx
+│   │   ├── NewPortfolio.jsx
+│   ├── App.jsx
+├── .dockerignore
+├── Dockerfile
+├── Dockerfile.bun
+├── Dockerfile.pnpm
+├── package-lock.json
 ├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+├── react-router.config.ts
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.json
+├── vite.config.ts
 
-## Styling
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+## Funcionalidades
+- **Home:** Página inicial com uma breve introdução e habilidades.
+- **Portfolio:** Exibição dos projetos com nome, descrição e link.
+- **Contact:** Formulário para entrar em contato.
+- **Navegação:** Navegação entre as páginas utilizando React Router Dom.
+- **Componentes Reutilizáveis:** Cabeçalho, rodapé e cartões de projeto.
+- **Página de Erro:** Página de erro personalizada para rotas inválidas.
 
----
+## Como Executar Localmente
+1. Clone o repositório:
+   ```bash
+   git clone [URL do repositório]
+   cd meu-portfolio
 
-Built with ❤️ using React Router.
+npm install
+
+http://localhost:3000
